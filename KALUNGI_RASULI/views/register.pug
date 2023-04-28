@@ -1,0 +1,60 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  // https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css')
+  // Icons: https://getbootstrap.com/docs/5.0/extend/icons/
+  // https://cdnjs.com/libraries/font-awesome
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css')
+  // Custom CSS
+  link(rel='stylesheet' href='/css/registerStyles.css')
+  title Registeration Page
+form(action='/register' onsubmit='return validate(event)' method='post')
+  .row
+    .row#logo
+      h1 GENQ KYC FORM
+    .row
+      h5 Bio Data
+      .col-md-6
+        input#firstname.input(type='text' name='firstname' placeholder='First Name')
+      .col-md-6#one
+        input#dateOfbirth.input(type='text' name='dateOfbirth' placeholder='Data of Birth (DD/MM/YYYY)')
+      .col-md-6
+        input#lastname.input(type='text' name='lastname' placeholder='First Name')
+      .col-md-6#one
+        input#gender.input(type='text' name='gender' placeholder='Gender')
+    .row
+      h5 Location
+      .col-md-6
+        //- input#country.input(type='text' name='country' placeholder='Country')
+        select#country(name="country")
+            option(value="0") Country
+            option(value="UGANDA") UGANDA 
+            option(value="KENYA") KENYA 
+            option(value="RWANDA") RWANDA 
+            option(value="SOUTH-SUDAN") SOUTH SUDAN 
+            option(value="BURUNDI") BURUNDI 
+      .col-md-6#one
+        input#state.input(type='text' name='state' placeholder='State/District')
+      .col-md-6
+        input#town.input(type='text' name='town' placeholder='Town')
+      .col-md-6#one
+        input#zip.input(type='text' name='zip' placeholder='Zip Code')
+    .row
+      h5 Contacts and Address
+      .col-md-6
+        input#phone1.input(type='text' name='country' placeholder='Phone Number 1')
+      .col-md-6#one
+        input#phone2.input(type='text' name='state' placeholder='Phone Number 2')
+      |                 .
+      .col-md-12
+        input#email.input(type='text' name='town' placeholder='Email')
+    .row
+      button#submit.btn.btn-lg(type='submit') Submit
+// validation javascript
+script(src='/js/reg.js')
+// Option 1: Bootstrap Bundle with Popper
+script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js')

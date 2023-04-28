@@ -1,0 +1,48 @@
+.row{
+    width:80%;
+    margin: 0 auto;
+    padding: 5px;
+
+
+}
+.input{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    border: #ccc 3px solid;
+
+}
+#submit{
+    background-color:#ed7d31;
+    color: white;
+    padding: 10px 20px;
+    border: #f3af81 3px solid;
+    cursor: pointer;
+    width: 200px;
+    margin: 5px 75%;
+}
+#one.input{
+    position: relative;
+    right: 0;
+}
+
+h5{
+    color: #7e7e7e;
+    border-bottom: 4px solid #7e7e7e;
+    padding: 10px;;
+}
+#logo{
+    background-color: black;
+    text-align: center;
+    color: whitesmoke;
+}
+select{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    border: #ccc 3px solid;
+}
